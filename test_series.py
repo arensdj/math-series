@@ -8,48 +8,47 @@ from series_module import sum_series
 def test_fib_series():
   """
     This is a test function to test fibonnaci function 
-      
     Attributes: 
       n: A numeric value  
+    Test passes if assert evaluates to true
   """
   n = 6
   actual = fibonacci(n)
   expected = 8
   assert expected == actual
 
-
 def test_lucas_series():
   """
     This is a test function to test lucas function 
-      
-  Attributes: 
+    Attributes: 
       n: A numeric value  
+    Test passes if assert evaluates to true
   """
   n = 5
   actual = lucas(n)
   expected = 7
   assert expected == actual
 
-
 def test_sum_series_fib():
   """
     This is a test function to test sum_series function 
-      
-  Attributes: 
+    Attributes: 
       n: A numeric value  
+    Test passes if assert evaluates to true
   """
   n = 6
   actual = sum_series(n)
   expected = 8
   assert expected == actual  
 
-
 def test_sum_series_lucas():
   """
-    This is a test function to test sum_series function 
-      
-  Attributes: 
+    This is a test function to test sum_series function    
+    Attributes: 
       n: A numeric value  
+      arg1: optional numeric value
+      arg2: optional numeric value
+    Test passes if assert evaluates to true
   """
   n = 5
   arg1 = 2
