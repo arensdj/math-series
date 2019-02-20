@@ -19,39 +19,33 @@ def lucas(n):
   total = 0
 
   for i in range(index, n):
-  # while (index < n):
     total = array[i -1] + array[i]
     array.append(total)
-    # index += 1
   
-  print(str(array))
-  print(str(array[i]))
+  # print(str(array))
+  # print(str(array[i]))
   return array[i]
 
 
-  # while (index < n):
-  #   total = array[index -1] + array[index]
-  #   array.append(total)
-  #   index += 1
+def sum_series(n, arg1=0, arg2=1):
+  array = []
+  total = 0
+  index = 1
 
-  # print(str(array))
-  # print(str(array[index-1]))
-  # return array[index-1]
+  # if optional arguments are not included in function call, produce
+  # fibonacci numbers
+  if ( (arg1 == 0) and (arg2 == 1) ):
+    array.append(index)
+    array.append(index)
+  else:
+  # optional numbers were included in function call.  Produce lucas numbers
+    array.append(index+1)
+    array.append(index)
 
-# def sum_series(n, ):
+  for i in range(index, n):
+    total = array[i - 1] + array[i]
+    array.append(total)
+    
+  return array[i]
+  
 
-
-
-n = 5
-# result = fibonacci(n)
-# print('Returned: ' + str(result))
-result = lucas(n)
-
-
-
-# while (index < n):
-    # total = array[index -1] + array[index]
-    # index += 1
-    # i += 1
-# print('Content: ' + str(array))
-# return array[index-1]
